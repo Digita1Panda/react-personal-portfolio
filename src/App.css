@@ -212,7 +212,7 @@ nav.navbar .navbar-toggler-icon:after {
 
 .hero {
   font-weight: 700;
-  padding: 303px 0 300px 0;
+  padding: 316px 0 250px 0;
   background-image: url("./assets/images/hero3.png");
   background-position: top center;
   background-repeat: no-repeat;
@@ -230,8 +230,49 @@ nav.navbar .navbar-toggler-icon:after {
   );
   border: 1px solid rgba(255, 255, 255, 0.644);
   font-size: 20px;
-  margin-bottom: 16px;
+  margin-bottom: 30px;
   display: inline-block;
+}
+
+.hero h1 {
+  font-size: 50px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  line-height: 1;
+  margin-bottom: 23px;
+  display: block;
+}
+
+.hero p {
+  color: #b8b8b8;
+  font-size: 18px;
+  letter-spacing: 0.8px;
+  line-height: 1.5em;
+  width: 96%;
+}
+
+.hero button {
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 20px;
+  margin-top: 60px;
+  letter-spacing: 0.8px;
+  display: flex;
+  align-items: center;
+  background: transparent;
+  border: none;
+  outline: none;
+}
+
+.hero button svg {
+  font-size: 25px;
+  margin-left: 10px;
+  transition: 0.3s ease-in-out;
+  line-height: 1;
+}
+
+.hero button:hover svg {
+  margin-left: 25px;
 }
 
 .hero-col {
@@ -243,6 +284,21 @@ nav.navbar .navbar-toggler-icon:after {
   min-width: 330px;
   width: 330px;
   border-radius: 50%;
+}
+
+.hero-img {
+  animation: updown 3s linear infinite;
+}
+@keyframes updown {
+  0% {
+    transform: translateY(-30px);
+  }
+  50% {
+    transform: translateY(30px);
+  }
+  100% {
+    transform: translateY(-30px);
+  }
 }
 
 .hero-img {
@@ -301,7 +357,7 @@ nav.navbar .navbar-toggler-icon:after {
   flex-direction: column;
 }
 
-.img-box img {
+/* .img-box img {
   top: 0;
   left: 0;
   width: 100%;
@@ -312,4 +368,4 @@ nav.navbar .navbar-toggler-icon:after {
   transition: 0.5s;
   pointer-events: none;
   z-index: 5;
-}
+} */

@@ -1,7 +1,7 @@
 import { Container, Row, Col } from "react-bootstrap";
 import { ArrowRightCircle } from "react-bootstrap-icons";
 import profile from "../assets/images/profile.jpg";
-import { useState, useEffect } from "react";
+import TypeWriter from "typewriter-effect";
 
 const Header = () => {
   return (
@@ -9,10 +9,22 @@ const Header = () => {
       <Container>
         <Row className="align-items-center">
           <Col xs={12} md={6} xl={7}>
-            <p className="headline">Hi, Welcome to my Portfolio </p>
+            <span className="headline title">Hi, Welcome to my Portfolio </span>
             <h1>
               {`I am Kwok `}
-              <span className="wrap">Front-End Web Developer</span>
+              <span className="text">
+                <TypeWriter
+                  options={{
+                    autoStart: true,
+                    loop: true,
+                    delay: 40,
+                    strings: [
+                      "I'm a Front-End Developer",
+                      "I'm a Web Developer",
+                    ],
+                  }}
+                />
+              </span>
             </h1>
             <p>
               Transforming digital vision into seamless user-centric web
